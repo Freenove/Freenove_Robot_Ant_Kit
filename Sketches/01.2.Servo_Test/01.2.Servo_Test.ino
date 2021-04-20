@@ -1,5 +1,10 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Test the crawling of an ant robot
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "myServo.h"
-
 
 void setup() {
   Ant_Setup();

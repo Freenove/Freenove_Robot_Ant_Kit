@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Calibrate the Servo's Angle
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include <Servo.h>
 
 Servo myservo1;

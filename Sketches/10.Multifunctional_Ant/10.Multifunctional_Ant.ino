@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Integrate all the functions of Ant Robot
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "BluetoothOrders.h"
 #include "Emotion.h"
 #include "External_Devices.h"

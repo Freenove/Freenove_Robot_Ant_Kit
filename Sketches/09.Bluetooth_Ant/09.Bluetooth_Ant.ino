@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Bluetooth module remote control ant robot
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "BluetoothOrders.h"
 #include "myServo.h"
 

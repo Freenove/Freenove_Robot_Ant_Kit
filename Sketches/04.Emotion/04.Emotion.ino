@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Test the expression module
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "Emotion.h"
 
 void setup() {

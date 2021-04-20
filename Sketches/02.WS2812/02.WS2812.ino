@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Test the WS2812 LED of Ant Robot
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "WS2812.h"
 
 void setup() {

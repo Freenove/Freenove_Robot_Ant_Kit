@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Infrared remote control ant robot
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "myIRremote.h"
 #include "myServo.h"
 

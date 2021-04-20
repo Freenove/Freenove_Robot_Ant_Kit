@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Test the infrared receiver circuit
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "myIRremote.h"
 
 void setup() {

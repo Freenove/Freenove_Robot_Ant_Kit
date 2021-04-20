@@ -1,3 +1,9 @@
+/**********************************************************************
+  Product     : Freenove Robot Ant Kit
+  Description : Test the battery level and the buzzer
+  Auther      : www.freenove.com
+  Modification: 2021/04/20
+**********************************************************************/
 #include "External_Devices.h"
 
 void setup() {
