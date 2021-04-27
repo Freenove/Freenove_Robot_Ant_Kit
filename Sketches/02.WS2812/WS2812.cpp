@@ -57,13 +57,13 @@ void WS2812_Set_Color(unsigned char color_1, unsigned char color_2, unsigned cha
 {
   for (int i = 0; i < LEDS_COUNT; i++)
   {
-    ws2812_strip_color[i][0] = constrain(color_1, 0, 255);
-    ws2812_strip_color[i][1] = constrain(color_2, 0, 255);
-    ws2812_strip_color[i][2] = constrain(color_3, 0, 255);
+    ws2812_strip_color[i][0] = map(constrain(color_1, 0, 255),0,255,0,100);
+    ws2812_strip_color[i][1] = map(constrain(color_2, 0, 255),0,255,0,100);
+    ws2812_strip_color[i][2] = map(constrain(color_3, 0, 255),0,255,0,100);
   }
 }
 
-static int ws2812_led_state = 0; //记录彩灯的颜色
+static int ws2812_led_state = 0;
 static bool ws2812_led_red = 0;
 static bool ws2812_led_green = 0;
 static bool ws2812_led_blue = 0;
