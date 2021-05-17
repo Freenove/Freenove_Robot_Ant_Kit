@@ -17,14 +17,15 @@ int Ant_Move_Direction = 0; //Direction of ant movement
 int Ant_Move_Speed = 0;     //Ant speed
 
 void setup() {
-  Buzzer_Setup();     //Buzzer pin initialization
-  Emotion_Setup();    //Initializes the Led Matrix
-  Power_Setup();      //Battery pin initialization
-  Ultrasonic_Setup(); //Ultrasonic initialization
-  WS2812_Setup();     //WS2812 initialization function
-  IRremote_Setup();   //IR initialisation
-  Ant_Setup();        //Initialize the servo
-  Bluetooth_Setup();  //Test whether the Bluetooth is connected
+  Buzzer_Setup();           //Buzzer pin initialization
+  Emotion_Setup();          //Initializes the Led Matrix
+  Power_Setup();            //Battery pin initialization
+  Ultrasonic_Setup();       //Ultrasonic initialization
+  WS2812_Setup();           //WS2812 initialization function
+  IRremote_Setup();         //IR initialisation
+  Ant_Setup();              //Initialize the servo
+  Bluetooth_Setup();        //Test whether the Bluetooth is connected
+  Ant_Correct_Angle(0,4,0); //Calibrate ant Servo(Each robot is different, depending on your installation process)
 }
 
 void loop() {
