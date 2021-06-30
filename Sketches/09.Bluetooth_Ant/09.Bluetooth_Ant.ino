@@ -13,6 +13,9 @@ int Ant_Move_Speed = 0;     //Ant speed
 void setup() {
   Bluetooth_Setup();
   Ant_Setup();
+  
+  //NOTE：The ant robot is adjusted by modifying the parameters.
+  Ant_Correct_Angle(-1,4,1); //Calibrate ant Servo(Each robot is different, depending on your installation process)
 }
 
 void loop() {

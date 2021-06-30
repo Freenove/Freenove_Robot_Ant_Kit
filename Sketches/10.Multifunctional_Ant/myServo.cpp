@@ -24,7 +24,6 @@ void Ant_Setup(void)
   myservo1.attach(2);
   myservo2.attach(3);
   myservo3.attach(4);
-  Ant_Correct_Angle(0, 0, 0);
   ant_reset_angle();
 }
 

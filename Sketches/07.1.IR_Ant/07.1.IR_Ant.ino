@@ -13,6 +13,9 @@ void setup() {
   Serial.begin(9600);
   IRremote_Setup(); //Initialize the infrared receiver pin
   Ant_Setup();      //Initialize Servo
+  
+  //NOTE：The ant robot is adjusted by modifying the parameters.
+  Ant_Correct_Angle(-1,4,1); //Calibrate ant Servo(Each robot is different, depending on your installation process)
 }
 
 void loop() {

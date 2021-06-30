@@ -8,6 +8,7 @@
 
 void setup() {
   Ant_Setup();
+  Ant_Correct_Angle(-5, 5, -5);//Call this function to microcalibrate the ant robot
   delay(2000);
 }
 

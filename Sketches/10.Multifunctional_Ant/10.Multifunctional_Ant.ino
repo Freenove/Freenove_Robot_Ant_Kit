@@ -25,7 +25,8 @@ void setup() {
   IRremote_Setup();         //IR initialisation
   Ant_Setup();              //Initialize the servo
   Bluetooth_Setup();        //Test whether the Bluetooth is connected
-  Ant_Correct_Angle(0,4,0); //Calibrate ant Servo(Each robot is different, depending on your installation process)
+
+
 }
 
 void loop() {
