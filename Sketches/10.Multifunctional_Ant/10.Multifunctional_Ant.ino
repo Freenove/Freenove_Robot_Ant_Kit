@@ -25,7 +25,9 @@ void setup() {
   IRremote_Setup();         //IR initialisation
   Ant_Setup();              //Initialize the servo
   Bluetooth_Setup();        //Test whether the Bluetooth is connected
-
+  
+  Ant_Correct_Angle(1,1,1); //Change the patament of Ant_Correct_Angle(x1, x2, x3) tp calibrate ant Servo
+  delay(100);
 
 }
 
