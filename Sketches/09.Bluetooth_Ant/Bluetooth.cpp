@@ -2,6 +2,8 @@
 
 String inputStringBLE = "";
 bool stringComplete = false;
+long baudRate[] = {2400, 9600, 19200, 115200};  
+int baudRateCount = sizeof(baudRate) / sizeof(baudRate[0]);  
 
 String inputCommandArray[COMMANDS_COUNT_MAX];
 int paramters[COMMANDS_COUNT_MAX];
@@ -9,7 +11,20 @@ int paramters[COMMANDS_COUNT_MAX];
 //Initializes the serial port connected to Bluetooth
 void Bluetooth_Setup(void)
 {
-  Serial.begin(9600);
+  for (int i = 0; i < baudRateCount; i++) {  
+    Serial.begin(baudRate[i]);  
+    delay(100);  
+    Serial.flush();
+    Serial.println("AT+NAME=BT05");  // Or use Serial.print("AT+NAMEBT05-BLE\r\n");  
+    delay(200);  
+    Serial.println("AT+ROLE=0");  
+    delay(200);  
+    Serial.println("AT+UART=4");  
+    Serial.end();
+    delay(200);  
+    Serial.end();
+  } 
+  Serial.begin(115200);  
 }
 
 //Parses the Bluetooth data received by the serial port
