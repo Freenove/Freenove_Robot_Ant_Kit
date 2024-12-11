@@ -19,6 +19,8 @@
 #define ACTION_GET_VOLTAGE       'I'     //Battery Power Query
 #define INTERVAL_CHAR            '#'     //The directive resolves the separator character
 
+#define BLUETOOTH_CONFIG          2      //Select the appropriate Bluetooth configuration command(1/2)
+
 extern String inputStringBLE;
 extern bool stringComplete;
 

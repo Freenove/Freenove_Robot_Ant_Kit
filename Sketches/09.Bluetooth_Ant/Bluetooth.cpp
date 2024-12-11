@@ -15,13 +15,20 @@ void Bluetooth_Setup(void)
     Serial.begin(baudRate[i]);  
     delay(100);  
     Serial.flush();
+  #if (BLUETOOTH_CONFIG==1)
+    Serial.println("AT+NAMEBT05");  // Or use Serial.print("AT+NAMEBT05-BLE\r\n");  
+    delay(200);  
+    Serial.println("AT+UART8");  
+    delay(200);  
+  #endif
+  #if (BLUETOOTH_CONFIG==2)
     Serial.println("AT+NAME=BT05");  // Or use Serial.print("AT+NAMEBT05-BLE\r\n");  
     delay(200);  
     Serial.println("AT+ROLE=0");  
     delay(200);  
     Serial.println("AT+UART=4");  
-    Serial.end();
     delay(200);  
+  #endif
     Serial.end();
   } 
   Serial.begin(115200);  
