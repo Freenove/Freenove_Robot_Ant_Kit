@@ -115,35 +115,64 @@ If you fail to install CH340 follwing the steps above, please refer to ReadMe.pd
 02 Installation of Arduino IDE
 *********************************************
 
-We use Arduino Software (IDE) to compile and upload code to the control board. 
+Arduino Software (IDE) is used to write and upload the code for Arduino Board.
 
-If Arduino has been installed, you can skip to next step. 
+First, install Arduino Software (IDE): visit https://www.arduino.cc/en/software/
 
-Please visit https://www.arduino.cc/en/software
-
-For Microsoft Windows users, please click following one.
-
-.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_16.png
+.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface03.png
     :align: center
 
-After the download completes, run the installer and complete the installation.
+Select and download corresponding installer based on your operating system. If you are a Windows user, please select the "Windows" to download and install the driver correctly.
 
-When finishing installation, there will be a shortcut generated on desktop and you can run it.
-
-.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_17.png
+.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface04.png
     :align: center
 
-The interface of Arduino IDE is as follows:
+After the downloading completes, run the installer. For Windows users, there may pop up an installation dialog box of driver during the installation process. When it is popped up, please allow the installation.
 
-.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_18.png
+After installation is completed, an shortcut will be generated in the desktop.
+
+.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface05.png
     :align: center
 
-Programs written using Arduino Software (IDE) are called sketches. These sketches are written in the text editor and are saved with the file extension .iNo. The editor has features for cutting/pasting and for searching/replacing text. The message area gives feedback while saving and exporting and also displays errors. The console displays text output by the Arduino Software (IDE), including complete error messages and other information. The bottom righthand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, create, open, and save sketches, and open the serial monitor.
+Run it. The interface of the software is as follows:
 
-.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_19.png
+.. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface06.png
     :align: center
 
-Additional commands are found within the five menus: File, Edit, Sketch, Tools, Help. The menus are contextsensitive, which means only those items relevant to the work currently being carried out are available.
+Programs written with Arduino IDE are called sketches. These sketches are written in a text editor and are saved with the file extension.ino. The editor has features for cutting/pasting and for searching/replacing text. The console displays text output by the Arduino IDE, including complete error messages and other information. The bottom right-hand corner of the window displays the configured board and serial port. The toolbar buttons allow you to verify and upload programs, open the serial monitor, and access the serial plotter.
+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 80%
+    
+    +-------------+---------------------------------------------------------------------+
+    | |Preface07| | Verify                                                              |
+    |             |                                                                     |
+    |             | Checks your code for errors compiling it.                           |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface08| | Upload                                                              |
+    |             |                                                                     |
+    |             | Compiles your code and uploads it to the configured board.          |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface09| | Debug                                                               |
+    |             |                                                                     |
+    |             | Troubleshoot code errors and monitor program running status.        |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface10| | Serial Plotter                                                      |
+    |             |                                                                     |
+    |             | Real-time plotting of serial port data charts.                      |
+    +-------------+---------------------------------------------------------------------+
+    | |Preface11| | Serial Monitor                                                      |
+    |             |                                                                     |
+    |             | Used for debugging and communication between devices and computers. |
+    +-------------+---------------------------------------------------------------------+
+
+.. |Preface07| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface07.png
+.. |Preface08| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface08.png
+.. |Preface09| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface09.png
+.. |Preface10| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface10.png
+.. |Preface11| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Preface11.png
 
 03 Installation of Libraries
 ***************************************
@@ -155,17 +184,17 @@ In this tutorial, we use serveral libraries: Servo, UltrasonicSensor, Freenove_V
 .. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_20.png
     :align: center
 
-2.	On the pop-up window, input Servo and press Enter. Select the Servo library as marked below and click to install.
+2.	On the pop-up window, input **Servo** and press Enter. Select the Servo library as marked below and click to install.
 
 .. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_21.png
     :align: center
 
-3.	 After Servo library installs successfully, go on to input the name of the next library, that is, UltrasonicSensor and then install it.
+3.	 After Servo library installs successfully, go on to input the name of the next library, that is, **UltrasonicSensor** and then install it.
 
 .. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_22.png
     :align: center
 
-4.	After finishing installation, install the next library Freenove_WS3212B_RGBLED_Controller in the same way. 
+4.	After finishing installation, install the next library **Freenove_WS3212B_RGBLED_Controller** in the same way. 
 
 .. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_23.png
     :align: center
@@ -177,7 +206,7 @@ There is also another way to install libraries.
 .. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_24.png
     :align: center
 
-6.	On the pop-up window, select the source pakage Freenove_Robot_Ant_Kit/Library/Freenove_VK16K33_Lib.zip and click on Open.
+6.	On the pop-up window, select the source pakage **Freenove_Robot_Ant_Kit/Library/Freenove_VK16K33_Lib.zip** and click on **Open**.
 
 .. image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_25.png
     :align: center
@@ -214,108 +243,117 @@ There is also another way to install libraries.
 
 The pinout of the control board is as below:
 
-+------+------------------------+---------------------------------------------------------+
-| Pins |       Functions        |                      Introduction                       |
-+======+========================+=========================================================+
-| 0    | Uart-RX                | Bluetooth module. Please remove it when uploading code. |
-+------+------------------------+                                                         |
-| 1    | Uart-TX                |                                                         |
-+------+------------------------+---------------------------------------------------------+
-| 2    | Servo1                 | Servo motors                                            |
-+------+------------------------+                                                         |
-| 3    | Servo2                 |                                                         |
-+------+------------------------+                                                         |
-| 4    | Servo3                 |                                                         |
-+------+------------------------+---------------------------------------------------------+
-| 5    | Buzzer                 | Buzzer                                                  |
-+------+------------------------+---------------------------------------------------------+
-| 6    |                        | Extension IO                                            |
-+------+------------------------+---------------------------------------------------------+
-| 7    | Ultrasonic-Echo        | Ultrasonic module                                       |
-+------+------------------------+---------------------------------------------------------+
-| 8    | Ultrasonic-Trig        |                                                         |
-+------+------------------------+---------------------------------------------------------+
-| 9    | Infrared receiving pin | Infrared module                                         |
-+------+------------------------+---------------------------------------------------------+
-| 10   |                        | Extension IO                                            |
-+------+------------------------+---------------------------------------------------------+
-| 11   |                        | ISP/Extension IO                                        |
-+------+------------------------+---------------------------------------------------------+
-| 12   |                        | ISP/Extension IO                                        |
-+------+------------------------+---------------------------------------------------------+
-| 13   |                        | ISP/Extension IO                                        |
-+------+------------------------+---------------------------------------------------------+
-| A0   | Battery Voltage Pin    | Detect voltage of batteries(1/4)                        |
-+------+------------------------+---------------------------------------------------------+
-| A1   | AREF Pin               | Detect voltage of AREF pin                              |
-+------+------------------------+---------------------------------------------------------+
-| A2   | 5V Voltage Pin         | Detect 5V voltage(1/4)                                  |
-+------+------------------------+---------------------------------------------------------+
-| A3   | 3.3V Voltage Pin       | Detect 3.3V Voltage(1/4)                                |
-+------+------------------------+---------------------------------------------------------+
-| A4   | IIC-SDA                | WS2812 RGB LED module/LED Matrix (Expression module)    |
-+------+------------------------+                                                         |
-| A5   | IIC-SCL                |                                                         |
-+------+------------------------+---------------------------------------------------------+
+.. table::
+    :align: center
+    :class: zebra
+    
+    +------+------------------------+---------------------------------------------------------+
+    | Pins |       Functions        |                      Introduction                       |
+    +======+========================+=========================================================+
+    | 0    | Uart-RX                | Bluetooth module. Please remove it when uploading code. |
+    +------+------------------------+                                                         |
+    | 1    | Uart-TX                |                                                         |
+    +------+------------------------+---------------------------------------------------------+
+    | 2    | Servo1                 | Servo motors                                            |
+    +------+------------------------+                                                         |
+    | 3    | Servo2                 |                                                         |
+    +------+------------------------+                                                         |
+    | 4    | Servo3                 |                                                         |
+    +------+------------------------+---------------------------------------------------------+
+    | 5    | Buzzer                 | Buzzer                                                  |
+    +------+------------------------+---------------------------------------------------------+
+    | 6    |                        | Extension IO                                            |
+    +------+------------------------+---------------------------------------------------------+
+    | 7    | Ultrasonic-Echo        | Ultrasonic module                                       |
+    +------+------------------------+---------------------------------------------------------+
+    | 8    | Ultrasonic-Trig        |                                                         |
+    +------+------------------------+---------------------------------------------------------+
+    | 9    | Infrared receiving pin | Infrared module                                         |
+    +------+------------------------+---------------------------------------------------------+
+    | 10   |                        | Extension IO                                            |
+    +------+------------------------+---------------------------------------------------------+
+    | 11   |                        | ISP/Extension IO                                        |
+    +------+------------------------+---------------------------------------------------------+
+    | 12   |                        | ISP/Extension IO                                        |
+    +------+------------------------+---------------------------------------------------------+
+    | 13   |                        | ISP/Extension IO                                        |
+    +------+------------------------+---------------------------------------------------------+
+    | A0   | Battery Voltage Pin    | Detect voltage of batteries(1/4)                        |
+    +------+------------------------+---------------------------------------------------------+
+    | A1   | AREF Pin               | Detect voltage of AREF pin                              |
+    +------+------------------------+---------------------------------------------------------+
+    | A2   | 5V Voltage Pin         | Detect 5V voltage(1/4)                                  |
+    +------+------------------------+---------------------------------------------------------+
+    | A3   | 3.3V Voltage Pin       | Detect 3.3V Voltage(1/4)                                |
+    +------+------------------------+---------------------------------------------------------+
+    | A4   | IIC-SDA                | WS2812 RGB LED module/LED Matrix (Expression module)    |
+    +------+------------------------+                                                         |
+    | A5   | IIC-SCL                |                                                         |
+    +------+------------------------+---------------------------------------------------------+
 
 05 Component List
 ***************************************
 
 Before assembly, please compare the list with the kit you receive to make sure that no item is missed or damaged. Should this happens, please send emails to us: support@freenove.com, we will offer solution.
 
-+----------------------------------------------------------------------------------------+
-| Acrylic parts                                                                          |
-|                                                                                        |
-| |Chapter00_27|                                                                         |
-+--------------------------------+-------------------------------------------------------+
-| Servo \*3                      | Expression Module \*1                                 |
-|                                |                                                       |
-| |Chapter00_28|                 | |Chapter00_29|                                        |
-+--------------------------------+-------------------------------------------------------+
-| 8-digit RGB LED Module \*1     | I2C RGB LED Control Module \*1                        |
-|                                |                                                       |
-| |Chapter00_30|                 | |Chapter00_31|                                        |
-+--------------------------------+-------------------------------------------------------+
-| Ultrasonic Module \*1          | Bluetooth Module \*1                                  |
-|                                |                                                       |
-| |Chapter00_32|                 | |Chapter00_33|                                        |
-+--------------------------------+-------------------------------------------------------+
-| Infrared Remote Controller \*1 | Battery Holder \*1                                    |
-|                                |                                                       |
-| |Chapter00_34|                 | |Chapter00_35|                                        |
-+--------------------------------+-------------------------------------------------------+
-| Control board \*1                                                                      |
-|                                                                                        |
-| |Chapter00_36|                                                                         |
-+----------------------------------------------------------------------------------------+
-| 4P F-F Jumper Wires 20cm \*3                                                           |
-|                                                                                        |
-| |Chapter00_37|                                                                         |
-+----------------------------------------------------------------------------------------+
-| 3P F-F Jumper Wires 20cm \*1                                                           |
-|                                                                                        |
-| |Chapter00_38|                                                                         |
-+--------------------------------+--------------------------------+----------------------+
-| Tidy Cable 15cm \*1            | Type-C USB Cable \*1           |Metal cross sleeve \*1|
-|                                |                                |                      |
-| |Chapter00_39|                 | |Chapter00_40|                 | |Chapter00_41|       |
-+--------------------------------+--------------------------------+----------------------+
-| Machinery Parts                                                                        |
-|                                                                                        |
-| |Chapter00_42|                                                                         |
-+--------------------------------+--------------------------------+----------------------+
-| Cross Screwdriver (3mm) \*1    | Cross Screwdriver (2mm) \*1    | PVC rubber sheath \*8|
-|                                |                                |                      |
-| |Chapter00_43|                 | |Chapter00_44|                 | |Chapter00_45|       |
-+--------------------------------+--------------------------------+----------------------+
-| Required but NOT Contained Parts                                                       |
-|                                                                                        |
-| 2 x 3.7V 18650 lithium rechargeable batteries with continuous discharge current >3A.   |
-|                                                                                        |
-| Please refer to AboutBattery.pdf to purchase the batteries.                            |
-|                                                                                        |
-| |Chapter00_46|                                                                         |
-+----------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 90%
+    
+    +----------------------------------------------------------------------------------------+
+    | Acrylic parts                                                                          |
+    |                                                                                        |
+    | |Chapter00_27|                                                                         |
+    +--------------------------------+-------------------------------------------------------+
+    | Servo \*3                      | Expression Module \*1                                 |
+    |                                |                                                       |
+    | |Chapter00_28|                 | |Chapter00_29|                                        |
+    +--------------------------------+-------------------------------------------------------+
+    | 8-digit RGB LED Module \*1     | I2C RGB LED Control Module \*1                        |
+    |                                |                                                       |
+    | |Chapter00_30|                 | |Chapter00_31|                                        |
+    +--------------------------------+-------------------------------------------------------+
+    | Ultrasonic Module \*1          | Bluetooth Module \*1                                  |
+    |                                |                                                       |
+    | |Chapter00_32|                 | |Chapter00_33|                                        |
+    +--------------------------------+-------------------------------------------------------+
+    | Infrared Remote Controller \*1 | Battery Holder \*1                                    |
+    |                                |                                                       |
+    | |Chapter00_34|                 | |Chapter00_35|                                        |
+    +--------------------------------+-------------------------------------------------------+
+    | Control board \*1                                                                      |
+    |                                                                                        |
+    | |Chapter00_36|                                                                         |
+    +----------------------------------------------------------------------------------------+
+    | 4P F-F Jumper Wires 20cm \*3                                                           |
+    |                                                                                        |
+    | |Chapter00_37|                                                                         |
+    +----------------------------------------------------------------------------------------+
+    | 3P F-F Jumper Wires 20cm \*1                                                           |
+    |                                                                                        |
+    | |Chapter00_38|                                                                         |
+    +--------------------------------+--------------------------------+----------------------+
+    | Tidy Cable 15cm \*1            | Type-C USB Cable \*1           |Metal cross sleeve \*1|
+    |                                |                                |                      |
+    | |Chapter00_39|                 | |Chapter00_40|                 | |Chapter00_41|       |
+    +--------------------------------+--------------------------------+----------------------+
+    | Machinery Parts                                                                        |
+    |                                                                                        |
+    | |Chapter00_42|                                                                         |
+    +--------------------------------+--------------------------------+----------------------+
+    | Cross Screwdriver (3mm) \*1    | Cross Screwdriver (2mm) \*1    | PVC rubber sheath \*8|
+    |                                |                                |                      |
+    | |Chapter00_43|                 | |Chapter00_44|                 | |Chapter00_45|       |
+    +--------------------------------+--------------------------------+----------------------+
+    | Required but NOT Contained Parts                                                       |
+    |                                                                                        |
+    | 2 x 3.7V 18650 lithium rechargeable batteries with continuous discharge current >3A.   |
+    |                                                                                        |
+    | Please refer to AboutBattery.pdf to purchase the batteries.                            |
+    |                                                                                        |
+    | |Chapter00_46|                                                                         |
+    +----------------------------------------------------------------------------------------+
 
 .. |Chapter00_27| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_27.png
 .. |Chapter00_28| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_28.png
@@ -386,53 +424,58 @@ If the servos have been at that position, you won't observe anything.
 Assembly of Legs
 ==========================================
 
-+---------------------------------------------------------------------------------------------------+
-| Use 4 M4*14 screws and 4 M4 nuts to fix a servo to No.6 acylic part.                              |
-|                                                                                                   |
-| |Chapter00_52|                                                                                    |
-+---------------------------------------------------------------------------------------------------+
-| Fix 3 servos to No.1 acrylic part. (8 M4*14 screws, 8 M4 nuts, 2 M3*12 screws and 2 M3 nuts)      |
-|                                                                                                   |
-| |Chapter00_53|                                                                                    |
-|                                                                                                   |
-| On the left is the plan view of the acrylic part.                                                 |
-|                                                                                                   |
-| On the right is its perspective view.                                                             |
-+---------------------------------------------------------------------------------------------------+
-| Use 4 tappping screws to fix the disc servo arms to two No.4 acrylic parts.                       |
-|                                                                                                   |
-| Note: Tapping screws, disc servo arms and servos are packed in the servo package,                 |
-|                                                                                                   |
-| please don't use wrong ones.                                                                      |
-|                                                                                                   |
-| It is a bit strenuous to make the disc servo arm fix tightly, which is normal.                    |
-|                                                                                                   |
-| |Chapter00_54|                                                                                    |
-+---------------------------------------------------------------------------------------------------+
-| Use 2 tapping screws to fix the disc servo arms to No.3 acrylic part.                             |
-|                                                                                                   |
-| Note: Tapping screws, disc servo arms and servos are packed in the servo package,                 |
-|                                                                                                   |
-| please don't use wrong ones.                                                                      |
-|                                                                                                   |
-| It is a bit strenuous to make the disc servo arm fix tightly, which is normal.                    |
-|                                                                                                   |
-| |Chapter00_55|                                                                                    |
-+---------------------------------------------------------------------------------------------------+
-| Use 4 M3*12 screws and 4 M3 nuts to fix 4 No.5 acrylic parts to 2 No.4 acrylic parts.             |
-|                                                                                                   |
-| |Chapter00_56|                                                                                    |
-+---------------------------------------------------------------------------------------------------+
-| Use 3 servo arm screw to fix 3 servos to No.3 acrylic part and 2 No.4 acrylic parts respectively. |
-|                                                                                                   |
-| Note: servo arm screws are packed with the servos. Don't use wrong ones.                          |
-|                                                                                                   |
-| |Chapter00_57|                                                                                    |
-+---------------------------------------------------------------------------------------------------+
-| When finish assembly, from the top view, it looks as below:                                       |
-|                                                                                                   |
-| |Chapter00_58|                                                                                    |
-+---------------------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 90%
+    
+    +---------------------------------------------------------------------------------------------------+
+    | Use 4 M4*14 screws and 4 M4 nuts to fix a servo to No.6 acylic part.                              |
+    |                                                                                                   |
+    | |Chapter00_52|                                                                                    |
+    +---------------------------------------------------------------------------------------------------+
+    | Fix 3 servos to No.1 acrylic part. (8 M4*14 screws, 8 M4 nuts, 2 M3*12 screws and 2 M3 nuts)      |
+    |                                                                                                   |
+    | |Chapter00_53|                                                                                    |
+    |                                                                                                   |
+    | On the left is the plan view of the acrylic part.                                                 |
+    |                                                                                                   |
+    | On the right is its perspective view.                                                             |
+    +---------------------------------------------------------------------------------------------------+
+    | Use 4 tappping screws to fix the disc servo arms to two No.4 acrylic parts.                       |
+    |                                                                                                   |
+    | Note: Tapping screws, disc servo arms and servos are packed in the servo package,                 |
+    |                                                                                                   |
+    | please don't use wrong ones.                                                                      |
+    |                                                                                                   |
+    | It is a bit strenuous to make the disc servo arm fix tightly, which is normal.                    |
+    |                                                                                                   |
+    | |Chapter00_54|                                                                                    |
+    +---------------------------------------------------------------------------------------------------+
+    | Use 2 tapping screws to fix the disc servo arms to No.3 acrylic part.                             |
+    |                                                                                                   |
+    | Note: Tapping screws, disc servo arms and servos are packed in the servo package,                 |
+    |                                                                                                   |
+    | please don't use wrong ones.                                                                      |
+    |                                                                                                   |
+    | It is a bit strenuous to make the disc servo arm fix tightly, which is normal.                    |
+    |                                                                                                   |
+    | |Chapter00_55|                                                                                    |
+    +---------------------------------------------------------------------------------------------------+
+    | Use 4 M3*12 screws and 4 M3 nuts to fix 4 No.5 acrylic parts to 2 No.4 acrylic parts.             |
+    |                                                                                                   |
+    | |Chapter00_56|                                                                                    |
+    +---------------------------------------------------------------------------------------------------+
+    | Use 3 servo arm screw to fix 3 servos to No.3 acrylic part and 2 No.4 acrylic parts respectively. |
+    |                                                                                                   |
+    | Note: servo arm screws are packed with the servos. Don't use wrong ones.                          |
+    |                                                                                                   |
+    | |Chapter00_57|                                                                                    |
+    +---------------------------------------------------------------------------------------------------+
+    | When finish assembly, from the top view, it looks as below:                                       |
+    |                                                                                                   |
+    | |Chapter00_58|                                                                                    |
+    +---------------------------------------------------------------------------------------------------+
 
 .. |Chapter00_52| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_52.png
 .. |Chapter00_53| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_53.png
@@ -445,32 +488,42 @@ Assembly of Legs
 Assembly of Battery Holder
 =======================================
 
-+----------------------------------------------------------------------------------------------------+
-| Use 4 M3*10 screws and 4 M3 nuts to fix the 18650 battery holder to the back of No.1 acrylic part. |
-|                                                                                                    |
-| |Chapter00_59|                                                                                     |
-|                                                                                                    |
-| The left is the bottom view and the right is the top view                                          |
-+----------------------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 90%
+    
+    +----------------------------------------------------------------------------------------------------+
+    | Use 4 M3*10 screws and 4 M3 nuts to fix the 18650 battery holder to the back of No.1 acrylic part. |
+    |                                                                                                    |
+    | |Chapter00_59|                                                                                     |
+    |                                                                                                    |
+    | The left is the bottom view and the right is the top view                                          |
+    +----------------------------------------------------------------------------------------------------+
 
 .. |Chapter00_59| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_59.png
 
 Assemby of the Control board
 ======================================
 
-+-----------------------------------------------------------------------------------+
-| Use 4 M3*8 screws to fix 4 M3*10 brass standoffs to No.1 acrylic part. (Top view) |
-|                                                                                   |
-| |Chapter00_60|                                                                    |
-+-----------------------------------------------------------------------------------+
-| Use 4 M3*8 screws to fix the control board to the brass standoffs.                |
-|                                                                                   |
-| |Chapter00_61|                                                                    |
-+-----------------------------------------------------------------------------------+
-| Pay attention to the orientation of the control board. (Top view)                 |
-|                                                                                   |
-| |Chapter00_62|                                                                    |
-+-----------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 90%
+    
+    +-----------------------------------------------------------------------------------+
+    | Use 4 M3*8 screws to fix 4 M3*10 brass standoffs to No.1 acrylic part. (Top view) |
+    |                                                                                   |
+    | |Chapter00_60|                                                                    |
+    +-----------------------------------------------------------------------------------+
+    | Use 4 M3*8 screws to fix the control board to the brass standoffs.                |
+    |                                                                                   |
+    | |Chapter00_61|                                                                    |
+    +-----------------------------------------------------------------------------------+
+    | Pay attention to the orientation of the control board. (Top view)                 |
+    |                                                                                   |
+    | |Chapter00_62|                                                                    |
+    +-----------------------------------------------------------------------------------+
 
 .. |Chapter00_60| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_60.png
 .. |Chapter00_61| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_61.png
@@ -479,25 +532,30 @@ Assemby of the Control board
 Assembly of the WS2812 LED Module
 ======================================
 
-+------------------------------------------------------------------------------------------------------+
-| Use 8 M3*10 screws and 8 M3 nuts to fix the LED module and LED control module to No.2 acrylic parts. |
-|                                                                                                      |
-| |Chapter00_63|                                                                                       |
-|                                                                                                      |
-| Bottom view:                                                                                         |
-|                                                                                                      |
-| |Chapter00_64|                                                                                       |
-|                                                                                                      |
-| Top view:                                                                                            |
-|                                                                                                      |
-| |Chapter00_65|                                                                                       |
-|                                                                                                      |
-| Perspective:                                                                                         |
-+------------------------------------------------------------------------------------------------------+
-| Wirng of RGB LED module to its control module                                                        |
-|                                                                                                      |
-| |Chapter00_66|                                                                                       |
-+------------------------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 90%
+    
+    +------------------------------------------------------------------------------------------------------+
+    | Use 8 M3*10 screws and 8 M3 nuts to fix the LED module and LED control module to No.2 acrylic parts. |
+    |                                                                                                      |
+    | |Chapter00_63|                                                                                       |
+    |                                                                                                      |
+    | Bottom view:                                                                                         |
+    |                                                                                                      |
+    | |Chapter00_64|                                                                                       |
+    |                                                                                                      |
+    | Top view:                                                                                            |
+    |                                                                                                      |
+    | |Chapter00_65|                                                                                       |
+    |                                                                                                      |
+    | Perspective:                                                                                         |
+    +------------------------------------------------------------------------------------------------------+
+    | Wirng of RGB LED module to its control module                                                        |
+    |                                                                                                      |
+    | |Chapter00_66|                                                                                       |
+    +------------------------------------------------------------------------------------------------------+
 
 .. |Chapter00_63| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_63.png
 .. |Chapter00_64| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_64.png
@@ -507,21 +565,26 @@ Assembly of the WS2812 LED Module
 Assembly of the Body
 ====================================
 
-+----------------------------------------------------------------------------------+
-| Use 4 M3*8 screws to fix 4 M3*40 brass standoff to No.1 acrylic part. (Top view) |
-|                                                                                  |
-| |Chapter00_67|                                                                   |
-+----------------------------------------------------------------------------------+
-| Use 4 M3*8 screws to fix No.2 acrylic part to the standoffs. (Top view)          |
-|                                                                                  |
-| Pay attention to the orientation of No.2 acrylic parts.                          |
-|                                                                                  |
-| |Chapter00_68|                                                                   |
-+----------------------------------------------------------------------------------+
-| Wirng of the LED control module to control board                                 |
-|                                                                                  |
-| |Chapter00_69|                                                                   |
-+----------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 90%
+    
+    +----------------------------------------------------------------------------------+
+    | Use 4 M3*8 screws to fix 4 M3*40 brass standoff to No.1 acrylic part. (Top view) |
+    |                                                                                  |
+    | |Chapter00_67|                                                                   |
+    +----------------------------------------------------------------------------------+
+    | Use 4 M3*8 screws to fix No.2 acrylic part to the standoffs. (Top view)          |
+    |                                                                                  |
+    | Pay attention to the orientation of No.2 acrylic parts.                          |
+    |                                                                                  |
+    | |Chapter00_68|                                                                   |
+    +----------------------------------------------------------------------------------+
+    | Wirng of the LED control module to control board                                 |
+    |                                                                                  |
+    | |Chapter00_69|                                                                   |
+    +----------------------------------------------------------------------------------+
 
 .. |Chapter00_67| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_67.png
 .. |Chapter00_68| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_68.png
@@ -530,27 +593,32 @@ Assembly of the Body
 Assembly of the Head
 ====================================
 
-+---------------------------------------------------------------------------------------+
-| Use 4 M1.4*5 tapping screws to fix the ultrasonic module to No.7 acylic part.         |
-|                                                                                       |
-| |Chapter00_70|                                                                        |
-+---------------------------------------------------------------------------------------+
-| Use 4 M1.4*5 tapping screws to fix the expression module to No.8 acrylic part.        |
-|                                                                                       |
-| |Chapter00_71|                                                                        |
-+---------------------------------------------------------------------------------------+
-| Use a M3*12 screw and a M3 nut to fix No.7 or No.8 acrylic part to No.1 acrylic part. |
-|                                                                                       |
-| |Chapter00_72|                                                                        |
-+---------------------------------------------------------------------------------------+
-| Wiring of ultrasonic module to control board                                          |
-|                                                                                       |
-| |Chapter00_73|                                                                        |
-+---------------------------------------------------------------------------------------+
-| Wiring of the expression module to control board.                                     |
-|                                                                                       |
-| |Chapter00_74|                                                                        |
-+---------------------------------------------------------------------------------------+
+.. table::
+    :align: center
+    :class: table-line
+    :width: 90%
+    
+    +---------------------------------------------------------------------------------------+
+    | Use 4 M1.4*5 tapping screws to fix the ultrasonic module to No.7 acylic part.         |
+    |                                                                                       |
+    | |Chapter00_70|                                                                        |
+    +---------------------------------------------------------------------------------------+
+    | Use 4 M1.4*5 tapping screws to fix the expression module to No.8 acrylic part.        |
+    |                                                                                       |
+    | |Chapter00_71|                                                                        |
+    +---------------------------------------------------------------------------------------+
+    | Use a M3*12 screw and a M3 nut to fix No.7 or No.8 acrylic part to No.1 acrylic part. |
+    |                                                                                       |
+    | |Chapter00_72|                                                                        |
+    +---------------------------------------------------------------------------------------+
+    | Wiring of ultrasonic module to control board                                          |
+    |                                                                                       |
+    | |Chapter00_73|                                                                        |
+    +---------------------------------------------------------------------------------------+
+    | Wiring of the expression module to control board.                                     |
+    |                                                                                       |
+    | |Chapter00_74|                                                                        |
+    +---------------------------------------------------------------------------------------+
 
 .. |Chapter00_70| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_70.png
 .. |Chapter00_71| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_71.png
