@@ -299,29 +299,29 @@ Before assembly, please compare the list with the kit you receive to make sure t
 .. table::
     :align: center
     :class: table-line
-    :width: 90%
+    :width: 80%
     
     +----------------------------------------------------------------------------------------+
     | Acrylic parts                                                                          |
     |                                                                                        |
     | |Chapter00_27|                                                                         |
-    +--------------------------------+-------------------------------------------------------+
-    | Servo \*3                      | Expression Module \*1                                 |
-    |                                |                                                       |
-    | |Chapter00_28|                 | |Chapter00_29|                                        |
-    +--------------------------------+-------------------------------------------------------+
-    | 8-digit RGB LED Module \*1     | I2C RGB LED Control Module \*1                        |
-    |                                |                                                       |
-    | |Chapter00_30|                 | |Chapter00_31|                                        |
-    +--------------------------------+-------------------------------------------------------+
-    | Ultrasonic Module \*1          | Bluetooth Module \*1                                  |
-    |                                |                                                       |
-    | |Chapter00_32|                 | |Chapter00_33|                                        |
-    +--------------------------------+-------------------------------------------------------+
-    | Infrared Remote Controller \*1 | Battery Holder \*1                                    |
-    |                                |                                                       |
-    | |Chapter00_34|                 | |Chapter00_35|                                        |
-    +--------------------------------+-------------------------------------------------------+
+    +---------------------------------------------+------------------------------------------+
+    | Servo \*3                                   | Expression Module \*1                    |
+    |                                             |                                          |
+    | |Chapter00_28|                              | |Chapter00_29|                           |
+    +---------------------------------------------+------------------------------------------+
+    | 8-digit RGB LED Module \*1                  | I2C RGB LED Control Module \*1           |
+    |                                             |                                          |
+    | |Chapter00_30|                              | |Chapter00_31|                           |
+    +---------------------------------------------+------------------------------------------+
+    | Ultrasonic Module \*1                       | Bluetooth Module \*1                     |
+    |                                             |                                          |
+    | |Chapter00_32|                              | |Chapter00_33|                           |
+    +---------------------------------------------+------------------------------------------+
+    | Infrared Remote Controller \*1              | Battery Holder \*1                       |
+    |                                             |                                          |
+    | |Chapter00_34|                              | |Chapter00_35|                           |
+    +---------------------------------------------+------------------------------------------+
     | Control board \*1                                                                      |
     |                                                                                        |
     | |Chapter00_36|                                                                         |
@@ -427,7 +427,7 @@ Assembly of Legs
 .. table::
     :align: center
     :class: table-line
-    :width: 90%
+    :width: 80%
     
     +---------------------------------------------------------------------------------------------------+
     | Use 4 M4*14 screws and 4 M4 nuts to fix a servo to No.6 acylic part.                              |
@@ -491,7 +491,7 @@ Assembly of Battery Holder
 .. table::
     :align: center
     :class: table-line
-    :width: 90%
+    :width: 80%
     
     +----------------------------------------------------------------------------------------------------+
     | Use 4 M3*10 screws and 4 M3 nuts to fix the 18650 battery holder to the back of No.1 acrylic part. |
@@ -509,7 +509,7 @@ Assemby of the Control board
 .. table::
     :align: center
     :class: table-line
-    :width: 90%
+    :width: 80%
     
     +-----------------------------------------------------------------------------------+
     | Use 4 M3*8 screws to fix 4 M3*10 brass standoffs to No.1 acrylic part. (Top view) |
@@ -535,7 +535,7 @@ Assembly of the WS2812 LED Module
 .. table::
     :align: center
     :class: table-line
-    :width: 90%
+    :width: 80%
     
     +------------------------------------------------------------------------------------------------------+
     | Use 8 M3*10 screws and 8 M3 nuts to fix the LED module and LED control module to No.2 acrylic parts. |
@@ -568,7 +568,7 @@ Assembly of the Body
 .. table::
     :align: center
     :class: table-line
-    :width: 90%
+    :width: 80%
     
     +----------------------------------------------------------------------------------+
     | Use 4 M3*8 screws to fix 4 M3*40 brass standoff to No.1 acrylic part. (Top view) |
@@ -596,7 +596,7 @@ Assembly of the Head
 .. table::
     :align: center
     :class: table-line
-    :width: 90%
+    :width: 80%
     
     +---------------------------------------------------------------------------------------+
     | Use 4 M1.4*5 tapping screws to fix the ultrasonic module to No.7 acylic part.         |
