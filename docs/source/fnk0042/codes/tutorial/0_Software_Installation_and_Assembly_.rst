@@ -627,6 +627,8 @@ Assembly of the Head
 .. |Chapter00_74| image:: ../_static/imgs/0_Software_Installation_and_Assembly_/Chapter00_74.png
 
 07 Test
+**************************************************
+
 1, Connect the control board and computer with a type-C cable.
 
 2, Open 10.Multifunctional_Ant.ino in Freenove_Robot_Ant_Kit\\Sketches\\10.Multifunctional_Ant. Click to download the code to control board.
